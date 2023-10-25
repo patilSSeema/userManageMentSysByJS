@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: #f4bf96;
+}
+.sort {
+  display: flex;
+  justify-self:start;
+  gap: 10px;
+  color: white;
+  font-weight: 500;
+}
+#sortSelect {
+  width: 50px;
+  font-size: 12px;
+  padding: 0 5px;
+}
+.navBar {
+  display: flex;
+  justify-content: space-around;
+  background-color: #116466;
+  color: wheat;
+  padding: 10px 0;
+}
+.navBar input {
+  width: 240px;
+}
+.user-thumbnail {
+  border-radius: 50%;
+}
+.user-name {
+  cursor: pointer;
+  color: blue;
+}
+.current-page button {
+  font-weight: bold;
+  background-color: lightblue; /* Add background color here */
+}
+.pagination {
+  margin-top: 10px;
+}
+.pagination span {
+  margin: 2px;
+  cursor: pointer;
+}
+.userBtn {
+  color: white;
+  background-color: aqua;
+}
+
+#col1 h3 {
+  font-size: 24px;
+  color: #333; /* Adjust the color as needed */
+  margin: 10px 5px; /* Adjust margins as needed */
+}
+
+.user-info {
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0;
+}
+.table thead th {
+  background-color: #9a3b3b;
+  color: #fff; /* Text color for the table header */
+}
+.table body {
+  background-color: #dac0a3;
+  color: #fff; /* Text color for the table header */
+}
+.table-sty {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+.detail {
+  border: 2px solid black; /* Outer border style with your primary color */
+  border-collapse: collapse;
+  background-color: #dac0a3;
+  font-size: 14px;
+}
+.detail h5 {
+  background-color: #9a3b3b;
+  color: black;
+  color: white;
+  padding: 10px 30px;
+}
+
+.user-data-info {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-weight: 500;
+  justify-content: space-between;
+}
+
+.user-profile {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.user-details {
+  flex: 2;
+}
+
+/* Media query for screens less than 599px wide */
+@media screen and (max-width: 599px) {
+  .user-data-info {
+    flex-direction: column;
+    max-height: 200px;
+    font-size: 12px;
+  }
+  .user-data-info img {
+    margin-top: 10px;
+    border-radius: 40%;
+  }
+
+  .user-profile {
+    padding-top: 10px;
+    order: 1;
+  }
+
+  .user-details {
+    order: 2;
+  }
+  .table-sty {
+    border: 2px solid black;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .detail h5 {
+    padding: 5px 10px;
+  }
+  .navBar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #116466;
+    color: white;
+    padding: 10px 0;
+  }
+  .navBar h4 {
+    font-size: 20px;
+  }
+  .navBar input {
+    width: 140px;
+  }
+}
